@@ -1,1 +1,55 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jujutsu Showdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>JUJUTSU <span>SHOWDOWN</span></h1>
+    <p>A PIXEL FIGHTING GAME</p>
+  </header>
 
+  <main>
+    <section class="selection">
+      <h2>CHOOSE YOUR FIGHTER</h2>
+      <div id="playerChoices" class="choices"></div>
+
+      <h2>CHOOSE YOUR OPPONENT</h2>
+      <div id="enemyChoices" class="choices"></div>
+
+      <p id="matchup">YUJI VS SUKUNA</p>
+      <button id="startButton">START FIGHT</button>
+    </section>
+
+    <section class="arena">
+      <div class="hud">
+        <div class="health">
+          <span id="playerName">YUJI</span>
+          <div class="bar"><div id="playerHealth" class="fill"></div></div>
+          <small id="playerHP">100 HP</small>
+        </div>
+        <div id="timer">60</div>
+        <div class="health enemy-health">
+          <span id="enemyName">SUKUNA</span>
+          <div class="bar"><div id="enemyHealth" class="fill"></div></div>
+          <small id="enemyHP">100 HP</small>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="900" height="420"></canvas>
+
+      <div id="message">CHOOSE YOUR FIGHTERS</div>
+      <div class="controls">
+        A / D: MOVE · W: JUMP · J: PUNCH · K: KICK · L: SPECIAL · I: BLOCK
+      </div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
+```
